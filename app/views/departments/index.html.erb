@@ -2,6 +2,10 @@
 
 <% @departments.each do |department| %>
 
-<p> <%= department.name %> </p>
-
+<h3> <%= department.name %>: <%= department.floor %> </h3>
+<p>Employees:</p>
+<% department.employees.each do |employee| %>
+<li> <%= employee.name %> </li>
+<% end %>
+<p> <%=  %> </p>
 <% end %>
